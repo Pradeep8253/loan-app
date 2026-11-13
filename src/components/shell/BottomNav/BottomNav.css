@@ -1,0 +1,81 @@
+.bnav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  background: var(--white);
+  border-top: 2px solid var(--line);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+.bnav__inner {
+  position: relative;
+  height: var(--bottomnav-h);
+  max-width: 100%;
+  padding-inline: 4px;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: stretch;
+}
+.bnav__tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  min-width: 48px;
+  min-height: 48px;
+  color: var(--navy);
+  -webkit-tap-highlight-color: transparent;
+}
+.bnav__pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 30px;
+  border-radius: var(--r-pill);
+  background: transparent;
+  transition: background-color 260ms var(--ease-out), color 260ms var(--ease-out);
+}
+.bnav__tab.is-active .bnav__pill { background: var(--navy); color: var(--white); }
+.bnav__tab:active .bnav__pill { transform: scale(0.94); }
+.bnav__label { font-size: 0.68rem; font-weight: 800; letter-spacing: 0.02em; }
+.bnav__tab.is-active .bnav__label { color: var(--navy); }
+.bnav__apply {
+  position: relative;
+  align-self: start;
+  margin-top: -22px;
+  justify-self: center;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background: var(--amber);
+  color: var(--ink);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  border: 4px solid var(--white);
+  box-shadow: 0 4px 0 var(--navy);
+  transition: transform var(--dur-fast) var(--ease-out);
+}
+.bnav__apply:active { transform: scale(0.94); }
+.bnav__apply-label {
+  font-size: 0.56rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  margin-top: 1px;
+}
+.bnav__tab:disabled { cursor: wait; color: var(--slate); }
+.bnav__tab--wa { color: var(--whatsapp); }
+.bnav__tab--wa .bnav__label { color: var(--whatsapp); font-weight: 800; }
+.bnav__tab--wa .bnav__pill { color: var(--whatsapp); }
+.bnav__tab--wa:active .bnav__pill { background: #E6F8EB; }
+@media (min-width: 1024px) {
+  .bnav { display: none; }
+}

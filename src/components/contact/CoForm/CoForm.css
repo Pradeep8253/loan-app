@@ -1,0 +1,9 @@
+.co-form { display: grid; gap: 16px; }
+.co-form__row { display: grid; gap: 16px; }
+.co-form__hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.co-form__done { display: grid; gap: 12px; justify-items: start; background: var(--sky); border: 2px solid var(--navy); border-radius: var(--r-lg); padding: 22px; }
+.co-form__done svg { color: var(--success); }
+.co-form__done h3 { font-size: 1.2rem; }
+.co-form__done p { font-size: 0.88rem; font-weight: 600; color: var(--slate); }
+.co-form__done strong { color: var(--navy); }
+@media (min-width: 620px) { .co-form__row { grid-template-columns: 1fr 1fr; } }

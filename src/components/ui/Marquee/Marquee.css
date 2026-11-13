@@ -1,0 +1,27 @@
+.marquee { overflow: hidden; padding-block: 14px; contain: paint; }
+.marquee--navy { background: var(--navy); color: var(--white); }
+.marquee--amber { background: var(--amber); color: var(--ink); }
+.marquee--sky { background: var(--sky); color: var(--navy); border-block: 2px solid var(--line); }
+.marquee__track {
+  display: flex;
+  gap: 32px;
+  width: max-content;
+  animation: marquee 34s linear infinite;
+}
+.marquee:hover .marquee__track,
+.marquee:active .marquee__track,
+.marquee:focus-within .marquee__track { animation-play-state: paused; }
+.marquee__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 800;
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+.marquee__dot { width: 8px; height: 8px; background: var(--amber); border-radius: 2px; }
+.marquee--amber .marquee__dot { background: var(--navy); }
+.marquee--sky .marquee__dot { background: var(--teal); }
+@keyframes marquee { to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { .marquee__track { animation: none; } }

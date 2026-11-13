@@ -1,0 +1,2 @@
+.team-shell { min-height: 100dvh; background: var(--sky); }
+.team-shell::before { content: ""; display: block; height: 6px; background: var(--navy); border-bottom: 3px solid var(--amber); }

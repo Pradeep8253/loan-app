@@ -1,0 +1,10 @@
+.scroll-progress { position: fixed; top: 0; left: 0; right: 0; height: 3px; z-index: 140; pointer-events: none; }
+.scroll-progress__bar {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: var(--amber);
+  transform: scaleX(var(--p, 0));
+  transform-origin: left center;
+  transition: transform 80ms linear;
+}

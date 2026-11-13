@@ -1,0 +1,17 @@
+.pl-faq__grid { display: grid; gap: 28px; align-items: start; }
+.pl-faq__tip {
+  display: flex;
+  gap: 12px;
+  background: var(--amber);
+  border: 2px solid var(--ink);
+  border-radius: var(--r-md);
+  padding: 16px;
+  margin-top: 4px;
+  box-shadow: var(--shadow-offset-sm);
+}
+.pl-faq__tip svg { flex: none; margin-top: 2px; }
+.pl-faq__tip p { font-size: 0.88rem; font-weight: 600; line-height: 1.55; color: var(--ink); }
+@media (min-width: 960px) {
+  .pl-faq__grid { grid-template-columns: 0.8fr 1.2fr; gap: 48px; }
+  .pl-faq__side { position: sticky; top: 100px; }
+}

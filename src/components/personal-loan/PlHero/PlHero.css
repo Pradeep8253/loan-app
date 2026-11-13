@@ -1,0 +1,17 @@
+.pl-hero__card {
+  background: var(--white);
+  border: 2px solid var(--navy);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow-offset-sm);
+  padding: 14px;
+  display: grid;
+  gap: 12px;
+}
+.pl-hero__card .smart-img { border-radius: var(--r-md); }
+.pl-hero__card-body { display: grid; gap: 8px; }
+.pl-hero__card-kicker { font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: var(--teal); }
+.pl-hero__card-list { display: grid; gap: 6px; }
+.pl-hero__card-list li { display: flex; gap: 8px; font-size: 0.86rem; font-weight: 700; color: var(--ink); }
+.pl-hero__card-list svg { flex: none; color: var(--danger); margin-top: 2px; }
+.pl-hero__card-foot { display: flex; align-items: center; gap: 6px; font-size: 0.78rem; font-weight: 700; color: var(--slate); border-top: 2px solid var(--line); padding-top: 10px; }
+.pl-hero__card-foot svg { color: var(--teal); }

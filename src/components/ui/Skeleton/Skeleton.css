@@ -1,0 +1,18 @@
+.skel {
+  display: block;
+  background: var(--line);
+  animation: skel-pulse 1.4s var(--ease-out) infinite;
+}
+.skel-stack { display: grid; gap: 14px; }
+.skel-card {
+  display: grid;
+  gap: 14px;
+  padding: 20px;
+  border: 2px solid var(--line);
+  border-radius: var(--r-lg);
+  background: var(--white);
+}
+@keyframes skel-pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.55; } }
+@media (prefers-reduced-motion: reduce) { .skel { animation: none; } }
+
+.skel { height: var(--skel-h, 16px); width: var(--skel-w, 100%); border-radius: var(--skel-r, 8px); }

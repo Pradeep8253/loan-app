@@ -1,0 +1,11 @@
+.fa-cta__inner { display: grid; gap: 20px; justify-items: center; text-align: center; }
+.fa-cta__head { display: grid; gap: 8px; justify-items: center; }
+.fa-cta__head svg { color: var(--teal); }
+.fa-cta__title { max-width: 22ch; }
+.fa-cta__body { font-size: 0.92rem; font-weight: 600; color: var(--slate); }
+.fa-cta__actions { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+.fa-cta__btn { display: inline-flex; align-items: center; gap: 8px; min-height: 52px; padding: 12px 22px; border-radius: var(--r-pill); border: 2px solid var(--navy); background: var(--white); font-weight: 800; font-size: 0.94rem; color: var(--navy); }
+.fa-cta__btn:hover { background: var(--navy); color: var(--white); }
+.fa-cta__btn:active { transform: scale(0.97); }
+.fa-cta__btn--wa { background: var(--whatsapp); border-color: var(--whatsapp); color: var(--white); }
+.fa-cta__btn--wa:hover { background: var(--navy-deep); border-color: var(--navy-deep); color: var(--white); }

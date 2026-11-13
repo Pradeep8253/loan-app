@@ -1,0 +1,19 @@
+.cta-band { padding-block: var(--section-y); position: relative; overflow: hidden; }
+.cta-band--navy { background: var(--navy); color: var(--white); }
+.cta-band--teal { background: var(--teal); color: var(--white); }
+.cta-band--sky { background: var(--sky); color: var(--ink); border-block: 2px solid var(--line); }
+.cta-band--navy h2, .cta-band--teal h2 { color: var(--white); }
+.cta-band__inner { display: grid; gap: 18px; align-items: center; }
+.cta-band__title { max-width: 22ch; }
+.cta-band__body { margin-top: 8px; max-width: 54ch; color: var(--white); }
+.cta-band--sky .cta-band__body { color: var(--ink); }
+.cta-band__bullets { display: grid; gap: 6px; margin-top: 12px; }
+.cta-band__bullets li { display: flex; gap: 8px; font-weight: 700; font-size: 0.9rem; color: var(--white); }
+.cta-band--sky .cta-band__bullets li { color: var(--ink); }
+.cta-band__bullets li::before { content: ""; flex: none; width: 8px; height: 8px; margin-top: 6px; background: var(--amber); border-radius: 2px; }
+.cta-band__actions { display: grid; gap: 10px; }
+.cta-band__note { font-size: 0.76rem; font-weight: 700; color: var(--white); text-align: center; }
+.cta-band--sky .cta-band__note { color: var(--slate); }
+@media (min-width: 900px) {
+  .cta-band__inner { grid-template-columns: 1.25fr 0.75fr; gap: 48px; }
+}

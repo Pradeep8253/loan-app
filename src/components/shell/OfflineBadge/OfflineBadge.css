@@ -1,0 +1,14 @@
+.offline-badge {
+  position: sticky;
+  top: 0;
+  z-index: 89;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--amber);
+  color: var(--ink);
+  font-size: 0.8rem;
+  font-weight: 800;
+  padding: 8px 16px;
+}

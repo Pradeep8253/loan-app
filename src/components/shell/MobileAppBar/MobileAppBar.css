@@ -1,0 +1,62 @@
+.appbar {
+  position: sticky;
+  top: 0;
+  z-index: 90;
+  background: var(--navy);
+  color: var(--white);
+  padding-top: env(safe-area-inset-top, 0px);
+  transition: transform 260ms var(--ease-out);
+  will-change: transform;
+}
+.appbar--hidden { transform: translateY(-100%); }
+.appbar__inner {
+  height: var(--appbar-h);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-inline: 1rem;
+  max-width: 100%;
+  margin-inline: auto;
+}
+.appbar__brand { display: inline-flex; align-items: center; gap: 10px; padding: 6px 8px; min-height: 48px; }
+.appbar__mark {
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--amber);
+  color: var(--ink);
+  border-radius: var(--r-sm);
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+.appbar__word { font-family: var(--font-display), system-ui, sans-serif; font-weight: 800; font-size: 1.15rem; letter-spacing: -0.02em; }
+.appbar__title {
+  flex: 1;
+  font-family: var(--font-body), system-ui, sans-serif;
+  font-size: 1.02rem;
+  font-weight: 800;
+  color: var(--white);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.appbar__spacer { flex: 1; }
+.appbar__actions { display: flex; gap: 4px; flex: none; }
+.appbar__icon {
+  width: 48px;
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--r-sm);
+  color: var(--white);
+  transition: background-color var(--dur-fast) var(--ease-out), transform var(--dur-fast) var(--ease-out);
+}
+.appbar__icon:active { transform: scale(0.94); background: rgba(255, 255, 255, 0.12); }
+.appbar__back { margin-right: 0; }
+@media (min-width: 1024px) {
+  .appbar { display: none; }
+}

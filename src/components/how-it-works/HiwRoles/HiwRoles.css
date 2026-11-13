@@ -1,0 +1,9 @@
+.hiw-roles { border-block: 6px solid var(--amber); }
+.hiw-roles__grid { display: grid; gap: 32px; align-items: center; }
+.hiw-roles__media { max-width: 440px; }
+.hiw-roles__list { display: grid; }
+.hiw-roles__item { display: grid; grid-template-columns: auto 1fr; gap: 14px; padding: 14px 0; border-bottom: 2px solid rgba(255,255,255,0.18); }
+.hiw-roles__n { font-family: var(--font-display), system-ui, sans-serif; font-weight: 800; font-size: 1.2rem; color: var(--amber); line-height: 1.2; }
+.hiw-roles__title { color: var(--white); font-size: 1.05rem; }
+.hiw-roles__body { color: var(--line); font-size: 0.86rem; font-weight: 600; margin-top: 2px; }
+@media (min-width: 960px) { .hiw-roles__grid { grid-template-columns: 0.7fr 1.3fr; gap: 52px; } }

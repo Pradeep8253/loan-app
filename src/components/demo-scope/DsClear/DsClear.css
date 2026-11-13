@@ -1,0 +1,16 @@
+.ds-c__grid { display: grid; gap: 20px; align-items: start; }
+.ds-c__title { font-size: clamp(1.4rem, 3.2vw, 2.2rem); }
+.ds-c__body { font-size: 0.9rem; font-weight: 600; color: var(--slate); margin-top: 6px; max-width: 52ch; }
+.ds-c__actions { margin-top: 14px; display: grid; gap: 8px; justify-items: start; }
+.ds-c__fine { font-size: 0.74rem; font-weight: 700; color: var(--slate); }
+.ds-c__fine code { background: var(--sky); border: 1px solid var(--line); border-radius: 4px; padding: 1px 5px; font-size: 0.72rem; }
+.ds-c__next { background: var(--sky); border: 2px solid var(--line); border-radius: var(--r-lg); padding: 14px 16px; display: grid; gap: 12px; align-content: start; }
+.ds-c__next-label { font-size: 0.66rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: var(--slate); }
+.ds-c__next-row { display: grid; grid-template-columns: 36px 1fr; gap: 10px; }
+.ds-c__next-icon { width: 36px; height: 36px; border-radius: var(--r-sm); background: var(--navy); color: var(--amber); display: inline-flex; align-items: center; justify-content: center; }
+.ds-c__next-row h3 { font-size: 0.9rem; }
+.ds-c__next-row p { font-size: 0.8rem; font-weight: 600; color: var(--slate); margin-top: 2px; }
+@media (min-width: 900px) {
+  .ds-c__grid { grid-template-columns: 1fr 1fr; gap: 48px; }
+  .ds-c__next { padding: 20px; gap: 16px; }
+}

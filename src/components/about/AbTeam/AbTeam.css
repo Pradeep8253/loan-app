@@ -1,0 +1,11 @@
+.ab-team__grid { display: grid; gap: 12px; }
+.ab-team__card { background: var(--white); border: 2px solid var(--navy); border-radius: var(--r-lg); overflow: hidden; display: flex; flex-direction: column; box-shadow: var(--shadow-offset-sm); }
+.ab-team__card .smart-img { border-radius: 0; }
+.ab-team__body { padding: 14px 16px; display: grid; gap: 4px; flex: 1; }
+.ab-team__name { font-size: 1.05rem; }
+.ab-team__role { font-size: 0.72rem; font-weight: 800; color: var(--teal); text-transform: uppercase; letter-spacing: 0.06em; }
+.ab-team__focus { font-size: 0.82rem; font-weight: 700; color: var(--slate); }
+.ab-team__line { font-size: 0.82rem; font-weight: 600; color: var(--ink); font-style: italic; border-top: 2px solid var(--line); padding-top: 6px; margin-top: 4px; }
+.ab-team__cta { display: inline-flex; align-items: center; gap: 6px; min-height: 40px; margin-top: 4px; font-weight: 800; font-size: 0.84rem; color: var(--teal); }
+.ab-team__cta:hover { color: var(--teal-bright); }
+@media (min-width: 900px) { .ab-team__grid { grid-template-columns: repeat(3, 1fr); gap: 18px; } .ab-team__body { padding: 18px; } }

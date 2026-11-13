@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#102A4C"/>
+  <circle cx="1040" cy="120" r="180" fill="#1F7A8C"/>
+  <circle cx="120" cy="560" r="120" fill="#F5A800"/>
+  <text x="96" y="300" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="92" fill="#FFFFFF">Mirvex</text>
+  <text x="96" y="392" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="44" fill="#F5A800">Loan Assist</text>
+  <text x="96" y="470" font-family="Arial, Helvetica, sans-serif" font-weight="600" font-size="30" fill="#FFFFFF">Compare partner options before you commit.</text>
+</svg>

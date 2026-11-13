@@ -1,0 +1,2 @@
+.ab-hero__collage { position: relative; padding-bottom: 44px; }
+.ab-hero__small { position: absolute; right: -4px; bottom: 0; width: 54%; border: 6px solid var(--white); box-shadow: var(--shadow-offset-sm); }

@@ -1,0 +1,11 @@
+.apply-page { background: var(--sky); min-height: 100dvh; padding-block: clamp(14px, 2.5vw, 28px) 0; }
+.apply-page__inner { max-width: 880px; margin-inline: auto; display: grid; gap: 14px; }
+.apply-page__head { display: grid; gap: 6px; }
+.apply-page__title { font-size: clamp(1.5rem, 3.8vw, 2.4rem); max-width: 20ch; }
+.apply-page__sub { font-size: 0.9rem; font-weight: 600; color: var(--slate); max-width: 60ch; }
+.apply-page__trust { display: flex; flex-wrap: wrap; gap: 6px 14px; }
+.apply-page__trust li { display: inline-flex; align-items: center; gap: 6px; font-size: 0.78rem; font-weight: 800; color: var(--navy); }
+.apply-page__trust svg { color: var(--teal); }
+.apply-page__trust a { display: inline-flex; align-items: center; gap: 6px; text-decoration: underline; text-underline-offset: 3px; min-height: 40px; }
+.apply-page__foot { padding-block: 14px 20px; font-size: 0.82rem; font-weight: 700; color: var(--slate); }
+.apply-page__foot a { display: inline-flex; align-items: center; min-height: 40px; color: var(--teal); text-decoration: underline; text-underline-offset: 3px; }

@@ -1,0 +1,16 @@
+.select { position: relative; }
+.select__input {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  min-height: 52px;
+  padding: 12px 44px 12px 14px;
+  border: 0;
+  background: transparent;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--ink);
+  border-radius: var(--r-md);
+}
+.select__input:focus { outline: none; }
+.select__chevron { position: absolute; right: 14px; color: var(--navy); pointer-events: none; }

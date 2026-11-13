@@ -1,0 +1,13 @@
+.emi-x__grid { display: grid; gap: 32px; align-items: start; }
+.emi-x__formula { background: var(--sky); border: 2px solid var(--navy); border-left: 8px solid var(--amber); border-radius: var(--r-md); padding: 18px; margin-top: 8px; }
+.emi-x__formula code { display: block; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.9rem; font-weight: 700; color: var(--navy); white-space: normal; word-break: break-word; }
+.emi-x__formula dl { margin-top: 12px; display: grid; gap: 6px; }
+.emi-x__formula dl div { display: flex; gap: 10px; font-size: 0.82rem; font-weight: 600; color: var(--slate); }
+.emi-x__formula dt { font-weight: 800; color: var(--navy); min-width: 24px; }
+.emi-x__body { margin-top: 14px; font-size: 0.92rem; font-weight: 600; color: var(--ink); line-height: 1.65; max-width: 62ch; }
+.emi-x__levers { display: grid; gap: 12px; }
+.emi-x__lever { background: var(--white); border: 2px solid var(--line); border-radius: var(--r-md); padding: 18px; display: grid; gap: 4px; }
+.emi-x__lever-n { font-family: var(--font-display), system-ui, sans-serif; font-weight: 800; font-size: 0.95rem; color: var(--teal); }
+.emi-x__lever-title { font-size: 1.05rem; }
+.emi-x__lever-body { font-size: 0.86rem; font-weight: 600; color: var(--slate); }
+@media (min-width: 960px) { .emi-x__grid { grid-template-columns: 1.1fr 0.9fr; gap: 48px; } }

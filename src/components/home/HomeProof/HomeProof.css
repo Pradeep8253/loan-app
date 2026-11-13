@@ -1,0 +1,63 @@
+.home-proof__grid { display: grid; gap: clamp(18px, 3vw, 44px); }
+.home-proof__media { position: relative; margin-top: 6px; max-width: 440px; }
+.home-proof__badge {
+  position: absolute;
+  right: 4px;
+  bottom: 12px;
+  background: var(--navy);
+  color: var(--white);
+  border-radius: var(--r-md);
+  border: 2px solid var(--white);
+  padding: 8px 12px;
+  display: grid;
+  line-height: 1.2;
+  max-width: 170px;
+  box-shadow: var(--shadow-offset-sm);
+}
+.home-proof__badge strong { font-family: var(--font-display), system-ui, sans-serif; font-size: 1.35rem; }
+.home-proof__badge span { font-size: 0.7rem; font-weight: 700; }
+.proof-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: var(--white);
+  border: 2px solid var(--navy);
+  border-radius: var(--r-lg);
+  padding: 14px 16px;
+  height: 100%;
+  margin: 2px 2px 2px 0;
+  box-shadow: var(--shadow-offset-sm);
+}
+.proof-card__quote { color: var(--amber); }
+.proof-card blockquote { font-size: 0.92rem; font-weight: 600; color: var(--ink); line-height: 1.55; flex: 1; }
+.proof-card figcaption { display: flex; align-items: baseline; gap: 8px; }
+.proof-card__name { font-weight: 800; color: var(--navy); }
+.proof-card__city { font-size: 0.8rem; font-weight: 700; color: var(--slate); }
+.proof-card__outcome {
+  align-self: flex-start;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  background: var(--sky);
+  border: 2px solid var(--line);
+  border-radius: var(--r-pill);
+  padding: 3px 10px;
+  color: var(--navy);
+}
+.home-proof__list {
+  margin-top: 14px;
+  background: var(--white);
+  border: 2px solid var(--navy);
+  border-radius: var(--r-lg);
+  padding: 14px 16px;
+}
+.home-proof__list-title { font-family: var(--font-display), system-ui, sans-serif; font-weight: 800; font-size: 1.1rem; color: var(--navy); margin-bottom: 12px; }
+.home-proof__list ul { display: grid; gap: 12px; }
+.home-proof__list li { display: flex; gap: 10px; font-size: 0.9rem; font-weight: 600; color: var(--slate); }
+.home-proof__list svg { flex: none; color: var(--success); margin-top: 3px; }
+.home-proof__list li span { display: block; }
+.home-proof__list strong { display: block; color: var(--navy); font-weight: 800; margin-bottom: 2px; }
+@media (min-width: 960px) {
+  .home-proof__grid { grid-template-columns: 0.92fr 1.08fr; align-items: start; }
+}

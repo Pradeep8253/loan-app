@@ -1,0 +1,49 @@
+.el-tool__grid { display: grid; gap: 16px; align-items: start; }
+.el-tool__form { background: var(--sky); border: 2px solid var(--navy); border-radius: var(--r-lg); padding: 16px; display: grid; gap: 16px; box-shadow: var(--shadow-offset-sm); }
+.el-tool__segment { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; gap: 4px; background: var(--white); border: 2px solid var(--line); border-radius: var(--r-pill); padding: 3px; }
+.el-tool__seg { min-height: 40px; border-radius: var(--r-pill); font-weight: 800; font-size: 0.82rem; color: var(--navy); transition: background-color var(--dur-fast) var(--ease-out), color var(--dur-fast) var(--ease-out); }
+.el-tool__seg.is-active { background: var(--navy); color: var(--white); }
+.el-tool__seg:active { transform: scale(0.97); }
+.el-tool__hint { display: flex; gap: 6px; align-items: flex-start; font-size: 0.78rem; font-weight: 700; color: var(--amber-dark); background: var(--white); border-left: 4px solid var(--amber); padding: 6px 8px; }
+.el-tool__hint svg { flex: none; margin-top: 1px; }
+.el-tool__note { font-size: 0.72rem; font-weight: 600; color: var(--slate); line-height: 1.5; }
+.el-tool__result { display: grid; gap: 12px; }
+.el-tool__amount { background: var(--navy); color: var(--white); border-radius: var(--r-lg); padding: 16px; display: grid; gap: 4px; }
+.el-tool__amount span { font-size: 0.68rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: var(--amber); }
+.el-tool__amount strong { font-family: var(--font-display), system-ui, sans-serif; font-size: clamp(1.8rem, 4.2vw, 2.4rem); line-height: 1; }
+.el-tool__amount p { font-size: 0.74rem; font-weight: 700; color: var(--line); }
+.el-tool__gauge { background: var(--white); border: 2px solid var(--line); border-radius: var(--r-lg); padding: 14px; }
+.el-tool__gauge-head { display: flex; justify-content: space-between; align-items: baseline; font-weight: 800; color: var(--navy); font-size: 0.84rem; }
+.el-tool__gauge-head strong { font-family: var(--font-display), system-ui, sans-serif; font-size: 1.15rem; }
+.el-tool__gauge-track { height: 10px; border-radius: var(--r-pill); background: var(--line); overflow: hidden; margin: 6px 0; }
+.el-tool__gauge-fill { display: block; height: 100%; border-radius: var(--r-pill); width: var(--foir-w); transition: width 400ms var(--ease-out), background-color 300ms var(--ease-out); }
+.el-tool__gauge-note { font-size: 0.78rem; font-weight: 700; color: var(--slate); }
+.el-tool__next { background: var(--white); border: 2px solid var(--line); border-radius: var(--r-lg); padding: 14px; display: grid; gap: 6px; }
+.el-tool__next-title { font-family: var(--font-display), system-ui, sans-serif; font-weight: 800; color: var(--navy); font-size: 0.94rem; }
+.el-tool__next ul { display: grid; gap: 4px; }
+.el-tool__next li { font-size: 0.8rem; font-weight: 600; color: var(--slate); padding-left: 14px; position: relative; }
+.el-tool__next li::before { content: ""; position: absolute; left: 0; top: 6px; width: 5px; height: 5px; background: var(--teal); }
+.el-tool__next-cta { display: inline-flex; align-items: center; gap: 6px; min-height: 40px; font-weight: 800; font-size: 0.84rem; color: var(--teal); }
+
+@media (min-width: 960px) {
+  .el-tool__grid { grid-template-columns: 1fr 0.95fr; gap: 28px; }
+  .el-tool__form { padding: 22px; gap: 20px; border-radius: var(--r-xl); }
+  .el-tool__amount { padding: 22px; border-radius: var(--r-xl); }
+  .el-tool__gauge { padding: 18px; }
+  .el-tool__next { padding: 18px; }
+}
+@media (max-width: 959px) {
+  .el-tool__sticky { display: flex; position: fixed; left: 12px; right: 12px; bottom: calc(var(--bottomnav-h) + var(--safe-bottom) + 10px); z-index: 70; background: var(--white); border: 2px solid var(--navy); border-radius: var(--r-md); box-shadow: var(--shadow-soft); padding: 8px 8px 8px 16px; align-items: center; justify-content: space-between; gap: 10px; }
+  .el-tool__sticky span { font-size: 0.62rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: var(--slate); display: block; }
+  .el-tool__sticky strong { font-family: var(--font-display), system-ui, sans-serif; font-size: 1.1rem; color: var(--navy); }
+}
+
+.el-tool__sticky { display: none; }
+@media (max-width: 959px) {
+  .el-tool { padding-bottom: 96px; }
+  .el-tool__sticky { z-index: 105; }
+}
+
+.el-tool__gauge-fill.is-success { background: var(--success); }
+.el-tool__gauge-fill.is-amber { background: var(--amber); }
+.el-tool__gauge-fill.is-danger { background: var(--danger); }

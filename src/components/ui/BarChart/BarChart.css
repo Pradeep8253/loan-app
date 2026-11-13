@@ -1,0 +1,44 @@
+.bars { margin: 0; }
+.bars__plot {
+  display: flex;
+  align-items: flex-end;
+  gap: clamp(4px, 1.6vw, 10px);
+  height: var(--bars-h, 180px);
+  padding-top: 22px;
+  border-bottom: 2px solid var(--line);
+}
+.bars__col { flex: 1; min-width: 0; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; height: 100%; position: relative; }
+.bars__bar {
+  width: 100%;
+  max-width: 46px;
+  height: var(--bar-h, 0%);
+  background: var(--teal);
+  border-radius: 6px 6px 0 0;
+  transition: height 700ms var(--ease-out);
+  transition-delay: var(--delay, 0ms);
+}
+.bars__col:nth-child(2n) .bars__bar { background: var(--navy); }
+.bars__value {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  font-size: 0.66rem;
+  font-weight: 800;
+  color: var(--slate);
+  white-space: nowrap;
+}
+.bars__label { font-size: 0.66rem; font-weight: 800; color: var(--slate); margin: 6px 0 -20px; text-transform: uppercase; letter-spacing: 0.04em; }
+.bars__table { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+
+/* Narrow screens: rotate the value so eight labels never overlap. */
+@media (max-width: 560px) {
+  .bars__plot { padding-top: 34px; }
+  .bars__value {
+    top: -34px;
+    transform: rotate(-90deg);
+    transform-origin: center;
+    font-size: 0.6rem;
+    letter-spacing: 0.01em;
+  }
+}
+@media (prefers-reduced-motion: reduce) { .bars__bar { transition: none; } }

@@ -1,0 +1,26 @@
+.pl-steps__grid { display: grid; gap: 20px; align-items: start; }
+.pl-steps__rail { display: grid; gap: 0; }
+.pl-steps__step { display: grid; grid-template-columns: auto 1fr; gap: 12px; padding: 12px 0; border-bottom: 2px solid var(--line); }
+.pl-steps__step:first-child { border-top: 2px solid var(--line); }
+.pl-steps__num { font-family: var(--font-display), system-ui, sans-serif; font-weight: 800; font-size: 1.25rem; color: var(--navy); border-bottom: 4px solid var(--amber); padding-bottom: 2px; height: fit-content; }
+.pl-steps__step-title { font-size: 0.98rem; }
+.pl-steps__step-body { font-size: 0.84rem; font-weight: 600; color: var(--slate); margin-top: 2px; }
+.pl-steps__docs {
+  background: var(--navy);
+  color: var(--white);
+  border-radius: var(--r-lg);
+  padding: 16px;
+  display: grid;
+  gap: 10px;
+}
+.pl-steps__docs-head { display: flex; align-items: center; gap: 8px; font-family: var(--font-display), system-ui, sans-serif; font-weight: 800; font-size: 1rem; }
+.pl-steps__docs-head svg { color: var(--amber); }
+.pl-steps__docs ul { display: grid; gap: 6px; }
+.pl-steps__docs li { display: flex; gap: 8px; align-items: center; font-size: 0.86rem; font-weight: 700; }
+.pl-steps__docs li svg { color: var(--amber); flex: none; }
+.pl-steps__docs-note { font-size: 0.74rem; font-weight: 600; color: var(--line); border-top: 2px solid rgba(255,255,255,0.18); padding-top: 8px; }
+@media (min-width: 960px) {
+  .pl-steps__grid { grid-template-columns: 1.25fr 0.75fr; gap: 44px; }
+  .pl-steps__step { padding: 16px 0; gap: 16px; }
+  .pl-steps__docs { position: sticky; top: 100px; padding: 24px; }
+}

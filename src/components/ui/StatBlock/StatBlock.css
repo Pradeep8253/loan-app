@@ -1,0 +1,14 @@
+.stat { display: grid; gap: 4px; }
+.stat__value {
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-weight: 800;
+  font-size: clamp(1.9rem, 3.4vw, 2.7rem);
+  line-height: 1;
+  color: var(--navy);
+  letter-spacing: -0.02em;
+}
+.stat__suffix { color: var(--teal); }
+.stat__label { font-size: 0.86rem; font-weight: 700; color: var(--slate); line-height: 1.35; }
+.stat--dark .stat__value { color: var(--white); }
+.stat--dark .stat__suffix { color: var(--amber); }
+.stat--dark .stat__label { color: var(--white); }

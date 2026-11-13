@@ -1,0 +1,8 @@
+.bl-hero__panel { background: var(--sky); border: 2px solid var(--amber); border-radius: var(--r-lg); padding: 20px; display: grid; gap: 12px; color: var(--ink); }
+.bl-hero__panel-title { font-family: var(--font-display), system-ui, sans-serif; font-weight: 800; font-size: 1.05rem; color: var(--navy); }
+.bl-hero__uses { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.bl-hero__use { display: inline-flex; align-items: center; gap: 7px; justify-content: flex-start; min-height: 48px; padding: 8px 12px; border-radius: var(--r-sm); background: var(--white); border: 2px solid var(--line); font-weight: 800; font-size: 0.8rem; color: var(--navy); transition: all var(--dur-fast) var(--ease-out); text-align: left; }
+.bl-hero__use.is-active { background: var(--navy); border-color: var(--navy); color: var(--white); }
+.bl-hero__use:active { transform: scale(0.97); }
+.bl-hero__detail { font-size: 0.86rem; font-weight: 600; color: var(--ink); border-top: 2px solid var(--line); padding-top: 12px; }
+.bl-hero__note { font-size: 0.74rem; font-weight: 700; color: var(--slate); }

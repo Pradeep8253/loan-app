@@ -1,0 +1,29 @@
+.hiw-tl__list { display: grid; }
+.hiw-tl__row { display: grid; grid-template-columns: 48px 1fr; gap: 12px; position: relative; padding-bottom: 16px; }
+.hiw-tl__row::before {
+  content: "";
+  position: absolute;
+  left: 23px;
+  top: 48px;
+  bottom: 0;
+  width: 2px;
+  background: var(--line);
+}
+.hiw-tl__row:last-child::before { display: none; }
+.hiw-tl__marker { display: grid; justify-items: center; gap: 4px; }
+.hiw-tl__n { font-family: var(--font-display), system-ui, sans-serif; font-weight: 800; font-size: 1.15rem; color: var(--navy); }
+.hiw-tl__icon { width: 36px; height: 36px; border-radius: 50%; background: var(--amber); color: var(--ink); display: inline-flex; align-items: center; justify-content: center; border: 2px solid var(--white); }
+.hiw-tl__content { background: var(--sky); border: 2px solid var(--line); border-radius: var(--r-md); padding: 12px 14px; min-width: 0; }
+.hiw-tl__head { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; justify-content: space-between; }
+.hiw-tl__title { font-size: 1rem; }
+.hiw-tl__time { font-size: 0.66rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; background: var(--navy); color: var(--white); border-radius: var(--r-pill); padding: 2px 8px; white-space: nowrap; }
+.hiw-tl__blurb { font-size: 0.86rem; font-weight: 700; color: var(--ink); margin-top: 4px; }
+.hiw-tl__detail { font-size: 0.82rem; font-weight: 600; color: var(--slate); margin-top: 3px; line-height: 1.5; }
+.hiw-tl__owner { margin-top: 8px; font-size: 0.74rem; font-weight: 700; color: var(--slate); border-top: 2px solid var(--line); padding-top: 6px; }
+.hiw-tl__owner span { color: var(--teal); text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.66rem; font-weight: 800; }
+@media (min-width: 960px) {
+  .hiw-tl__row { grid-template-columns: 64px 1fr; gap: 24px; padding-bottom: 20px; }
+  .hiw-tl__row::before { left: 31px; top: 56px; width: 3px; }
+  .hiw-tl__icon { width: 42px; height: 42px; border-width: 3px; }
+  .hiw-tl__content { padding: 18px; border-radius: var(--r-lg); }
+}

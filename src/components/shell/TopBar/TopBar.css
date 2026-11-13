@@ -1,0 +1,7 @@
+.topbar { background: var(--navy-deep); color: var(--white); font-size: 0.8rem; font-weight: 600; }
+.topbar__inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 40px; }
+.topbar__hours { display: inline-flex; align-items: center; gap: 6px; }
+.topbar__links { display: inline-flex; gap: 20px; }
+.topbar__links a { display: inline-flex; align-items: center; gap: 6px; min-height: 40px; }
+.topbar__links a:hover { color: var(--amber); text-decoration: underline; text-underline-offset: 3px; }
+@media (max-width: 1023px) { .topbar { display: none; } }

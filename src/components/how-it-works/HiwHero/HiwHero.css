@@ -1,0 +1,8 @@
+.hiw-hero__card { background: var(--white); border: 2px solid var(--navy); border-radius: var(--r-lg); padding: 20px; box-shadow: var(--shadow-offset-sm); display: grid; gap: 10px; }
+.hiw-hero__card-title { display: flex; align-items: center; gap: 8px; font-family: var(--font-display), system-ui, sans-serif; font-weight: 800; color: var(--navy); font-size: 1.05rem; }
+.hiw-hero__card-title svg { color: var(--teal); }
+.hiw-hero__card ul { display: grid; }
+.hiw-hero__card li { display: flex; justify-content: space-between; gap: 12px; padding: 10px 0; border-bottom: 2px solid var(--line); font-size: 0.9rem; font-weight: 600; color: var(--ink); }
+.hiw-hero__card li:last-child { border-bottom: 0; }
+.hiw-hero__card li strong { color: var(--navy); font-weight: 800; white-space: nowrap; }
+.hiw-hero__card-note { font-size: 0.74rem; font-weight: 600; color: var(--slate); border-top: 2px solid var(--line); padding-top: 10px; }

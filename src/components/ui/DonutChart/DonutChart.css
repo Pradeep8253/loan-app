@@ -1,0 +1,21 @@
+.donut { display: flex; flex-wrap: wrap; align-items: center; gap: 20px; justify-content: center; }
+.donut__ring { position: relative; flex: none; }
+.donut__seg { transition: stroke-dasharray 900ms var(--ease-out); }
+.donut__center {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 2px;
+}
+.donut__top { font-family: var(--font-display), system-ui, sans-serif; font-weight: 800; font-size: 1.2rem; color: var(--navy); line-height: 1.1; }
+.donut__bottom { font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: var(--slate); }
+.donut__legend { display: grid; gap: 8px; }
+.donut__key { display: inline-flex; align-items: center; gap: 8px; font-weight: 700; font-size: 0.85rem; color: var(--ink); }
+.donut__swatch { width: 12px; height: 12px; border-radius: 3px; }
+
+.donut__ring { width: var(--donut-size, 180px); height: var(--donut-size, 180px); }
+.donut__swatch { background: var(--swatch, var(--teal)); }

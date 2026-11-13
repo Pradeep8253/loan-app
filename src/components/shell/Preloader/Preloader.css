@@ -1,0 +1,38 @@
+.preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: var(--navy);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  transition: opacity 300ms var(--ease-out), visibility 300ms;
+}
+.preloader--leaving { opacity: 0; visibility: hidden; }
+.preloader__mark {
+  width: 64px;
+  height: 64px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--amber);
+  color: var(--ink);
+  border-radius: var(--r-md);
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+  animation: pre-mark 500ms var(--ease-out);
+}
+.preloader__word {
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-weight: 800;
+  font-size: 1.4rem;
+  color: var(--white);
+  letter-spacing: 0.02em;
+}
+.preloader__bar { width: 96px; height: 4px; background: rgba(255, 255, 255, 0.24); border-radius: var(--r-pill); overflow: hidden; }
+.preloader__bar span { display: block; height: 100%; background: var(--amber); animation: pre-bar 600ms var(--ease-out) forwards; transform-origin: left; }
+@keyframes pre-mark { from { transform: scale(0.8); } to { transform: none; } }
+@keyframes pre-bar { from { transform: scaleX(0); } to { transform: scaleX(1); } }

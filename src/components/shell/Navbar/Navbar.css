@@ -1,0 +1,59 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 95;
+  background: var(--white);
+  border-bottom: 2px solid var(--line);
+}
+.navbar__inner { display: flex; align-items: center; gap: 24px; min-height: 76px; }
+.navbar__brand { display: inline-flex; align-items: center; gap: 10px; flex: none; }
+.navbar__mark {
+  width: 42px;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--navy);
+  color: var(--amber);
+  border-radius: var(--r-sm);
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-weight: 800;
+  font-size: 1.35rem;
+}
+.navbar__word { display: block; font-family: var(--font-display), system-ui, sans-serif; font-weight: 800; font-size: 1.3rem; line-height: 1; color: var(--navy); letter-spacing: -0.02em; }
+.navbar__sub { display: block; font-size: 0.68rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--teal); margin-top: 3px; }
+.navbar__links { display: flex; align-items: center; gap: 2px; margin-left: auto; }
+.navbar__mega-wrap { position: relative; }
+.navbar__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 44px;
+  padding: 10px 12px;
+  border-radius: var(--r-sm);
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: var(--navy);
+  position: relative;
+  transition: color var(--dur-fast) var(--ease-out);
+}
+.navbar__link::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 6px;
+  height: 3px;
+  background: var(--amber);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--dur-fast) var(--ease-out);
+}
+.navbar__link:hover::after, .navbar__link.is-active::after { transform: scaleX(1); }
+.navbar__link.is-active { color: var(--navy); }
+.navbar__link svg { transition: transform var(--dur-fast) var(--ease-out); }
+.navbar__link svg.rot { transform: rotate(180deg); }
+.navbar__actions { display: flex; align-items: center; gap: 14px; flex: none; }
+.navbar__call { display: inline-flex; align-items: center; gap: 6px; font-weight: 800; font-size: 0.88rem; color: var(--navy); min-height: 44px; }
+.navbar__call:hover { color: var(--teal); }
+@media (max-width: 1023px) { .navbar { display: none; } }

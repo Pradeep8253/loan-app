@@ -1,0 +1,8 @@
+.bt-hero__calc { background: var(--sky); border: 2px solid var(--navy); border-radius: var(--r-lg); padding: 20px; box-shadow: var(--shadow-offset-sm); display: grid; gap: 14px; }
+.bt-hero__calc-title { font-family: var(--font-display), system-ui, sans-serif; font-weight: 800; font-size: 1.05rem; color: var(--navy); }
+.bt-hero__result { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.bt-hero__result div { background: var(--navy); color: var(--white); border-radius: var(--r-md); padding: 12px; display: grid; gap: 2px; }
+.bt-hero__result div:first-child { background: var(--teal); }
+.bt-hero__result span { font-size: 0.66rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; opacity: 1; }
+.bt-hero__result strong { font-family: var(--font-display), system-ui, sans-serif; font-size: 1.15rem; }
+.bt-hero__foot { font-size: 0.72rem; font-weight: 600; color: var(--slate); }

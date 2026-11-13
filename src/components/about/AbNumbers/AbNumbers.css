@@ -1,0 +1,6 @@
+.ab-num__head { display: grid; gap: 10px; max-width: 62ch; margin-bottom: 22px; }
+.ab-num__title { font-size: clamp(1.5rem, 3vw, 2.2rem); }
+.ab-num__sub { font-size: 0.9rem; font-weight: 600; color: var(--slate); }
+.ab-num__grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; border-block: 2px solid var(--line); padding-block: 22px; }
+.ab-num__grid .stat { padding-left: 14px; border-left: 6px solid var(--teal); }
+@media (min-width: 900px) { .ab-num__grid { grid-template-columns: repeat(4, 1fr); } }

@@ -1,0 +1,12 @@
+.bl-cta { background: var(--navy-deep); color: var(--white); padding-block: var(--section-y); }
+.bl-cta__inner { display: grid; gap: 28px; align-items: center; }
+.bl-cta__title { color: var(--white); max-width: 20ch; }
+.bl-cta__body { color: var(--white); margin-top: 12px; font-size: 0.95rem; font-weight: 600; max-width: 52ch; line-height: 1.6; }
+.bl-cta__meta { display: grid; gap: 8px; margin-top: 18px; }
+.bl-cta__meta li { display: flex; align-items: center; gap: 8px; font-size: 0.88rem; font-weight: 700; color: var(--white); }
+.bl-cta__meta svg { color: var(--amber); flex: none; }
+.bl-cta__form-card { background: var(--white); border-radius: var(--r-xl); padding: 22px; color: var(--ink); box-shadow: 8px 8px 0 var(--teal); }
+.bl-cta__form { display: grid; gap: 14px; }
+.bl-cta__form-label { font-weight: 800; color: var(--navy); font-size: 0.88rem; }
+.bl-cta__chips { display: flex; flex-wrap: wrap; gap: 8px; }
+@media (min-width: 960px) { .bl-cta__inner { grid-template-columns: 1fr 0.85fr; gap: 52px; } }

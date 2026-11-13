@@ -1,0 +1,17 @@
+.svc-sheet { display: grid; gap: 8px; }
+.svc-sheet__row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px;
+  min-height: 72px;
+  border: 2px solid var(--line);
+  border-radius: var(--r-md);
+  transition: border-color var(--dur-fast) var(--ease-out), background-color var(--dur-fast) var(--ease-out), transform var(--dur-fast) var(--ease-out);
+}
+.svc-sheet__row:active { transform: scale(0.985); }
+.svc-sheet__row:hover { border-color: var(--navy); background: var(--sky); }
+.svc-sheet__copy { flex: 1; min-width: 0; }
+.svc-sheet__name { display: block; font-weight: 800; color: var(--navy); font-size: 1rem; }
+.svc-sheet__blurb { display: block; color: var(--slate); font-size: 0.82rem; font-weight: 600; }
+.svc-sheet__chev { flex: none; color: var(--teal); }

@@ -1,0 +1,15 @@
+.el-f__grid { display: grid; gap: 14px; grid-template-columns: 1fr; }
+.el-f__card { border-radius: var(--r-lg); padding: 20px; border: 2px solid var(--navy); display: grid; gap: 6px; align-content: start; }
+.el-f__card--teal { background: var(--teal); color: var(--white); border-color: var(--teal); }
+.el-f__card--navy { background: var(--navy); color: var(--white); }
+.el-f__card--amber { background: var(--amber); color: var(--ink); border-color: var(--ink); }
+.el-f__card--sky, .el-f__card--white { background: var(--white); }
+.el-f__score { font-family: var(--font-display), system-ui, sans-serif; font-weight: 800; font-size: 1.6rem; line-height: 1; }
+.el-f__card--amber .el-f__score { color: var(--ink); }
+.el-f__card--sky .el-f__score, .el-f__card--white .el-f__score { color: var(--teal); }
+.el-f__title { font-size: 1.02rem; }
+.el-f__card--teal .el-f__title, .el-f__card--navy .el-f__title { color: var(--white); }
+.el-f__body { font-size: 0.85rem; font-weight: 600; line-height: 1.55; color: inherit; }
+.el-f__card--sky .el-f__body, .el-f__card--white .el-f__body { color: var(--slate); }
+@media (min-width: 700px) { .el-f__grid { grid-template-columns: repeat(2, 1fr); } .el-f__card:first-child { grid-row: span 2; } }
+@media (min-width: 1024px) { .el-f__grid { grid-template-columns: repeat(6, 1fr); } .el-f__card { grid-column: span 2; } .el-f__card:first-child { grid-column: span 2; grid-row: span 1; } }

@@ -1,0 +1,32 @@
+.ds-t__wrap { border: 2px solid var(--navy); border-radius: var(--r-lg); overflow: hidden; margin-top: 22px; background: var(--white); }
+.ds-t__table { width: 100%; border-collapse: collapse; }
+.ds-t__table thead th { background: var(--navy); color: var(--white); text-align: left; padding: 12px 16px; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; }
+.ds-t__table tbody th { text-align: left; padding: 14px 16px; border-top: 2px solid var(--line); font-size: 0.86rem; font-weight: 800; color: var(--navy); width: 20%; vertical-align: top; }
+.ds-t__table tbody td { padding: 14px 16px; border-top: 2px solid var(--line); font-size: 0.84rem; font-weight: 600; color: var(--slate); vertical-align: top; }
+.ds-t__table tbody tr:nth-child(even) { background: var(--sky); }
+.ds-t__dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 8px; flex: none; transform: translateY(-1px); }
+.ds-t__dot--on { background: var(--success); }
+.ds-t__dot--sim { background: var(--amber-dark); }
+
+/* Card layout below 720px: each row becomes a block, cells become labelled lines. */
+@media (max-width: 720px) {
+  .ds-t__table, .ds-t__table tbody, .ds-t__table tbody tr { display: block; width: 100%; }
+  .ds-t__table thead { display: none; }
+  .ds-t__table tbody tr { padding: 16px; border-top: 2px solid var(--line); }
+  .ds-t__table tbody tr:first-child { border-top: 0; }
+  .ds-t__table tbody th {
+    display: block; width: auto; padding: 0 0 10px; border: 0;
+    font-size: 1rem; line-height: 1.2;
+  }
+  .ds-t__table tbody td {
+    display: block; padding: 8px 0; border: 0;
+    font-size: 0.84rem; line-height: 1.5;
+  }
+  .ds-t__table tbody td::before {
+    content: attr(data-label); display: block;
+    font-size: 0.6rem; font-weight: 800; text-transform: uppercase;
+    letter-spacing: 0.09em; color: var(--slate); margin-bottom: 3px;
+  }
+  .ds-t__table tbody td:first-of-type { color: var(--ink); }
+  .ds-t__dot { margin-right: 6px; }
+}

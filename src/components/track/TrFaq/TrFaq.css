@@ -1,0 +1,7 @@
+.tr-faq__grid { display: grid; gap: 28px; align-items: start; }
+.tr-faq__support { display: flex; gap: 12px; background: var(--sky); border: 2px solid var(--navy); border-radius: var(--r-lg); padding: 16px; margin-top: 8px; }
+.tr-faq__support svg { color: var(--teal); flex: none; margin-top: 2px; }
+.tr-faq__support-title { font-weight: 800; color: var(--navy); font-size: 0.92rem; }
+.tr-faq__support a { font-weight: 800; color: var(--teal); font-size: 1.02rem; display: inline-flex; align-items: center; min-height: 44px; margin-top: 0; }
+.tr-faq__support p:last-child { font-size: 0.76rem; font-weight: 700; color: var(--slate); }
+@media (min-width: 960px) { .tr-faq__grid { grid-template-columns: 0.8fr 1.2fr; gap: 48px; } }

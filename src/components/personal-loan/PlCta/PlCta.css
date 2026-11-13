@@ -1,0 +1,6 @@
+.pl-cta { background: var(--teal); color: var(--white); padding-block: clamp(26px, 4vw, 40px); }
+.pl-cta__inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; }
+.pl-cta__kicker { font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.12em; color: var(--amber); }
+.pl-cta__title { color: var(--white); margin-top: 6px; font-size: clamp(1.35rem, 2.6vw, 1.9rem); max-width: 34ch; }
+.pl-cta__actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.pl-cta__actions .btn { min-width: 0; }

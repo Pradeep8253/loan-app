@@ -1,0 +1,15 @@
+.gr-p__rail { display: grid; gap: 0; margin-top: 24px; }
+.gr-p__step { position: relative; display: grid; grid-template-columns: 52px 1fr; gap: 16px; padding-bottom: 22px; }
+.gr-p__step:not(:last-child)::before { content: ""; position: absolute; left: 25px; top: 52px; bottom: 0; border-left: 3px dashed var(--line); }
+.gr-p__marker { width: 52px; height: 52px; border-radius: 50%; background: var(--navy); color: var(--white); display: grid; place-items: center; font-family: var(--font-display), system-ui, sans-serif; font-weight: 800; font-size: 1.05rem; border: 3px solid var(--amber); }
+.gr-p__content { background: var(--white); border: 2px solid var(--line); border-radius: var(--r-md); padding: 14px 16px; }
+.gr-p__head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px; margin-bottom: 4px; }
+.gr-p__head h3 { font-size: 1rem; }
+.gr-p__when { font-size: 0.68rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; background: var(--amber); color: var(--ink); border-radius: var(--r-pill); padding: 2px 9px; }
+.gr-p__content p { font-size: 0.88rem; font-weight: 600; color: var(--slate); }
+@media (min-width: 860px) {
+  .gr-p__rail { grid-template-columns: repeat(4, 1fr); gap: 18px; }
+  .gr-p__step { grid-template-columns: 1fr; gap: 12px; padding-bottom: 0; }
+  .gr-p__step:not(:last-child)::before { display: none; }
+  .gr-p__content { height: 100%; }
+}

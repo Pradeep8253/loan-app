@@ -1,0 +1,16 @@
+.hl-proc__rail { display: grid; gap: 0; position: relative; }
+.hl-proc__stage { position: relative; padding: 0 0 22px 30px; border-left: 3px solid var(--line); }
+.hl-proc__stage:last-child { border-left-color: transparent; padding-bottom: 0; }
+.hl-proc__dot { position: absolute; left: -9px; top: 2px; width: 15px; height: 15px; border-radius: 50%; background: var(--amber); border: 3px solid var(--white); }
+.hl-proc__when { display: inline-flex; align-items: center; gap: 5px; font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: var(--teal); }
+.hl-proc__title { font-size: 1.05rem; margin-top: 2px; }
+.hl-proc__body { font-size: 0.87rem; font-weight: 600; color: var(--slate); margin-top: 2px; max-width: 56ch; }
+.hl-proc__now { margin-top: 26px; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: center; background: var(--sky); border: 2px solid var(--navy); border-radius: var(--r-lg); padding: 20px; }
+.hl-proc__now-title { font-family: var(--font-display), system-ui, sans-serif; font-weight: 800; color: var(--navy); font-size: 1.1rem; }
+.hl-proc__now-body { font-size: 0.86rem; font-weight: 600; color: var(--slate); margin-top: 2px; max-width: 56ch; }
+@media (min-width: 900px) {
+  .hl-proc__rail { grid-auto-flow: column; grid-auto-columns: 1fr; gap: 16px; border-left: 0; }
+  .hl-proc__stage { border-left: 0; border-top: 3px solid var(--line); padding: 22px 0 0; }
+  .hl-proc__stage:last-child { border-top-color: var(--line); }
+  .hl-proc__dot { left: 0; top: -9px; }
+}

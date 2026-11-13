@@ -1,0 +1,16 @@
+.enq-form { display: grid; gap: 16px; }
+.enq-form__row { display: grid; gap: 16px; }
+.enq-form__hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.enq-form__assure {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--slate);
+  line-height: 1.5;
+}
+.enq-form__assure svg { flex: none; color: var(--success); margin-top: 2px; }
+@media (min-width: 560px) {
+  .enq-form__row { grid-template-columns: 1fr 1fr; }
+}

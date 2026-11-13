@@ -1,0 +1,8 @@
+.bl-faq__grid { display: grid; gap: 26px; align-items: start; }
+.bl-faq__side { display: grid; gap: 0; background: var(--white); border: 2px solid var(--navy); border-radius: var(--r-lg); overflow: hidden; }
+.bl-faq__side .smart-img { border-radius: 0; }
+.bl-faq__side-card { padding: 18px; display: grid; gap: 6px; }
+.bl-faq__side-title { font-family: var(--font-display), system-ui, sans-serif; font-weight: 800; color: var(--navy); font-size: 1.02rem; }
+.bl-faq__side-body { font-size: 0.85rem; font-weight: 600; color: var(--slate); line-height: 1.55; }
+.bl-faq__side-tag { font-size: 0.68rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: var(--teal); border-top: 2px solid var(--line); padding-top: 10px; margin-top: 4px; }
+@media (min-width: 960px) { .bl-faq__grid { grid-template-columns: 1.15fr 0.85fr; gap: 40px; } }

@@ -1,0 +1,25 @@
+.gr-form__grid { display: grid; gap: 16px; align-items: start; }
+.gr-form__side { background: var(--navy); color: var(--white); border-radius: var(--r-lg); padding: 16px; display: grid; gap: 10px; align-content: start; }
+.gr-form__side .eyebrow { background: var(--amber); color: var(--ink); }
+.gr-form__side-title { color: var(--white); font-size: 1.25rem; }
+.gr-form__dl { display: grid; gap: 8px; }
+.gr-form__dl div { display: grid; grid-template-columns: 72px 1fr; gap: 10px; border-top: 2px solid rgba(255,255,255,0.16); padding-top: 8px; }
+.gr-form__dl dt { font-size: 0.66rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: var(--line); padding-top: 3px; }
+.gr-form__dl dd { font-size: 0.84rem; font-weight: 700; color: var(--white); }
+.gr-form__dl a { display: inline-flex; align-items: center; min-height: 40px; text-decoration: underline; text-underline-offset: 3px; }
+.gr-form__side-note { display: flex; gap: 8px; font-size: 0.76rem; font-weight: 700; color: var(--line); background: rgba(255,255,255,0.08); border-left: 4px solid var(--amber); padding: 8px 10px; border-radius: 0 var(--r-sm) var(--r-sm) 0; }
+.gr-form__side-note svg { flex: none; color: var(--amber); margin-top: 1px; }
+.gr-form__panel { background: var(--white); border: 2px solid var(--navy); border-radius: var(--r-xl); padding: 16px; box-shadow: var(--shadow-offset-sm); }
+.gr-form__form { display: grid; gap: 14px; }
+.gr-form__row { display: grid; gap: 14px; }
+.gr-form__hint { display: flex; align-items: center; gap: 6px; font-size: 0.74rem; font-weight: 700; color: var(--slate); }
+.gr-form__hint svg { color: var(--amber-dark); }
+.gr-form__hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.gr-form__done { display: grid; gap: 10px; justify-items: start; }
+.gr-form__done svg { color: var(--success); }
+.gr-form__done h3 { font-size: 1.2rem; }
+.gr-form__done p { font-size: 0.86rem; font-weight: 600; color: var(--slate); }
+.gr-form__done strong { color: var(--navy); }
+.gr-form__done-note { font-size: 0.78rem; }
+@media (min-width: 620px) { .gr-form__row { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 960px) { .gr-form__grid { grid-template-columns: 0.8fr 1.2fr; gap: 32px; } .gr-form__side { position: sticky; top: 92px; padding: 22px; } .gr-form__panel { padding: 22px; } }

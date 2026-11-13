@@ -1,0 +1,38 @@
+.uc-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: var(--white);
+  border: 2px solid var(--line);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  transition: border-color var(--dur) var(--ease-out), box-shadow var(--dur) var(--ease-out), transform var(--dur) var(--ease-out);
+}
+.uc-card:hover { border-color: var(--navy); box-shadow: var(--shadow-offset-sm); transform: translate(-2px, -2px); }
+.uc-card .smart-img { border-radius: 0; }
+.uc-card__body { display: flex; flex-direction: column; gap: 8px; padding: 18px; flex: 1; }
+.uc-card__icon {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--r-sm);
+  background: var(--sky);
+  color: var(--navy);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.uc-card__title { font-size: 1.05rem; line-height: 1.2; }
+.uc-card__text { font-size: 0.88rem; font-weight: 600; color: var(--slate); flex: 1; }
+.uc-card__foot { display: flex; align-items: center; justify-content: space-between; gap: 10px; border-top: 2px solid var(--line); padding-top: 12px; margin-top: 4px; }
+.uc-card__amount { font-size: 0.78rem; font-weight: 800; color: var(--navy); }
+.uc-card__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 44px;
+  padding: 6px 10px;
+  font-weight: 800;
+  font-size: 0.85rem;
+  color: var(--teal);
+}
+.uc-card__cta:hover { color: var(--teal-bright); }

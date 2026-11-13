@@ -1,0 +1,6 @@
+.el-cta { background: var(--teal); color: var(--white); padding-block: var(--section-y); }
+.el-cta__inner { display: grid; gap: 22px; align-items: center; }
+.el-cta__title { color: var(--white); max-width: 26ch; }
+.el-cta__body { color: var(--white); font-size: 0.95rem; font-weight: 600; margin-top: 10px; max-width: 56ch; }
+.el-cta__actions { display: grid; gap: 10px; }
+@media (min-width: 960px) { .el-cta__inner { grid-template-columns: 1.2fr 0.8fr; gap: 48px; } }

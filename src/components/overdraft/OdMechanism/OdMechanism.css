@@ -1,0 +1,26 @@
+.od-mech { border-block: 6px solid var(--amber); }
+.od-mech__grid { display: grid; gap: 32px; }
+.od-mech__diagram { background: var(--white); border-radius: var(--r-lg); padding: 22px; display: grid; gap: 12px; color: var(--ink); }
+.od-mech__row { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+.od-mech__label { font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: var(--slate); }
+.od-mech__limit { font-family: var(--font-display), system-ui, sans-serif; font-weight: 800; font-size: 1.5rem; color: var(--navy); }
+.od-mech__bar { display: flex; height: 26px; border-radius: var(--r-pill); overflow: hidden; border: 2px solid var(--navy); }
+.od-mech__fill--used { background: var(--amber); }
+.od-mech__fill--free { background: var(--sky); }
+.od-mech__legend { display: flex; flex-wrap: wrap; gap: 14px; font-size: 0.78rem; font-weight: 700; color: var(--slate); }
+.od-mech__legend span { display: inline-flex; align-items: center; gap: 6px; }
+.od-mech__swatch { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
+.od-mech__swatch--used { background: var(--amber); }
+.od-mech__swatch--free { background: var(--sky); border: 1px solid var(--line); }
+.od-mech__timeline { display: grid; gap: 8px; margin-top: 4px; border-top: 2px solid var(--line); padding-top: 12px; }
+.od-mech__timeline li { font-size: 0.85rem; font-weight: 600; color: var(--ink); }
+.od-mech__timeline strong { color: var(--navy); font-weight: 800; }
+.od-mech__rules { display: grid; gap: 0; }
+.od-mech__rule { display: flex; gap: 14px; padding: 16px 0; border-bottom: 2px solid rgba(255,255,255,0.18); }
+.od-mech__rule:first-child { border-top: 2px solid rgba(255,255,255,0.18); }
+.od-mech__rule-icon { flex: none; width: 42px; height: 42px; border-radius: var(--r-sm); background: var(--amber); color: var(--ink); display: inline-flex; align-items: center; justify-content: center; }
+.od-mech__rule-title { color: var(--white); font-size: 1rem; }
+.od-mech__rule-body { color: var(--line); font-size: 0.86rem; font-weight: 600; margin-top: 2px; }
+@media (min-width: 960px) {
+  .od-mech__grid { grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+}

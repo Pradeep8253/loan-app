@@ -1,0 +1,19 @@
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 44px;
+  padding: 8px 16px;
+  border-radius: var(--r-pill);
+  border: 2px solid var(--line);
+  background: var(--white);
+  color: var(--navy);
+  font-weight: 800;
+  font-size: 0.88rem;
+  white-space: nowrap;
+  transition: all var(--dur-fast) var(--ease-out);
+}
+.chip:active { transform: scale(0.96); }
+.chip:hover { border-color: var(--navy); }
+.chip.is-active { background: var(--navy); border-color: var(--navy); color: var(--white); }
+.chip--sm { min-height: 44px; padding: 8px 14px; font-size: 0.8rem; }

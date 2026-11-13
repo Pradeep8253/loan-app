@@ -1,0 +1,15 @@
+.home-services { border-bottom: 2px solid var(--line); }
+.home-services__stats {
+  margin-top: clamp(16px, 2.5vw, 32px);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  padding: 14px 16px;
+  background: var(--sky);
+  border: 2px solid var(--navy);
+  border-radius: var(--r-lg);
+}
+.home-services__stats .stat { padding-left: 12px; border-left: 4px solid var(--amber); }
+@media (min-width: 900px) {
+  .home-services__stats { grid-template-columns: repeat(4, 1fr); gap: 18px; padding: 20px; }
+}

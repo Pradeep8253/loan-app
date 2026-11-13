@@ -1,0 +1,20 @@
+.home-faq__grid { display: grid; gap: clamp(24px, 4vw, 48px); align-items: start; }
+.home-faq__call {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  margin-top: 24px;
+  background: var(--white);
+  border: 2px solid var(--navy);
+  border-radius: var(--r-lg);
+  padding: 18px;
+  box-shadow: var(--shadow-offset-sm);
+}
+.home-faq__call svg { color: var(--teal); flex: none; margin-top: 3px; }
+.home-faq__call-title { font-weight: 800; color: var(--navy); font-size: 0.95rem; }
+.home-faq__call a { display: inline-flex; align-items: center; min-height: 44px; margin-top: 2px; font-weight: 800; color: var(--teal); font-size: 1.05rem; }
+.home-faq__call-hours { font-size: 0.78rem; font-weight: 700; color: var(--slate); margin-top: 2px; }
+.home-faq__more { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+@media (min-width: 960px) {
+  .home-faq__grid { grid-template-columns: 0.9fr 1.1fr; }
+}

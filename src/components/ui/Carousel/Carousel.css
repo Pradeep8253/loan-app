@@ -1,0 +1,39 @@
+.carousel { position: relative; }
+.carousel__viewport {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  margin-inline: calc(var(--gutter) * -1);
+  padding-inline: var(--gutter);
+  scroll-padding-inline: var(--gutter);
+}
+.carousel__viewport::-webkit-scrollbar { display: none; }
+.carousel__track { display: flex; gap: 16px; }
+.carousel__item {
+  flex: 0 0 84vw;
+  scroll-snap-align: start;
+  min-width: 0;
+  display: flex;
+}
+.carousel__item > * { width: 100%; }
+.carousel__dots { display: flex; justify-content: center; gap: 8px; margin-top: 18px; }
+.carousel__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: var(--r-pill);
+  background: var(--line);
+  transition: width var(--dur) var(--ease-out), background-color var(--dur) var(--ease-out);
+}
+.carousel__dot.is-active { width: 26px; background: var(--navy); }
+.carousel__dot::after { content: ""; position: absolute; inset: -12px; } /* 32px + spacing tap area */
+.carousel__dot { position: relative; }
+@media (min-width: 768px) {
+  .carousel__viewport { overflow: visible; margin-inline: 0; padding-inline: 0; }
+  .carousel__track { display: grid; gap: 20px; }
+  .carousel--cols-2 .carousel__track { grid-template-columns: repeat(2, 1fr); }
+  .carousel--cols-3 .carousel__track { grid-template-columns: repeat(3, 1fr); }
+  .carousel--cols-4 .carousel__track { grid-template-columns: repeat(4, 1fr); }
+  .carousel__item { flex: initial; }
+  .carousel__dots { display: none; }
+}
